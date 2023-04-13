@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body style="background-color:#F3E8FF ;">
+    <form action="prchilbule@gmail.com">
+        <div>
+            <h1>Employee interests Survey form</h1>
+            <label>Enter your name: <input type="text" name="username" required></label><br><br>
+            <label>Enter your department: <input type="text" name="department" min=5 max=8 required></label><br><br>
+            <label>Tell us about yourself: <textarea type="text" name="about"></textarea></label><br><br>
+
+            <div id="radio">
+                <p>Do you exercise at home? </p>
+                <label>Yes <input id="Yes" type="radio" name="Exercise" value="yes"></label>
+                <label>No <input id="No" type="radio" name="Exercise" value="no"></label>
+            </div>
+            <div id="checkbox">
+                <p>How do you like to read about your favourite topic?</p>
+                <label>Books<input type="checkbox" name="read" value="books"></label>
+                <label>Online Resourses<input type="checkbox" name="read" value="online"></label>
+                <label>Magazines<input type="checkbox" name="read" value="magazines"></label>
+                <label>Newspaper<input type="checkbox" name="read" value="newspaper"></label>
+                <label>Phone Apps<input type="checkbox" name="read" value="phone-apps"></label>
+            </div>
+            <div id="Dropdown">
+                <p>What genre of movies do you like?</p>
+                <select id="dropdown">
+                    <option value="">--Choose an option--</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Romantic">Romantic</option>
+                    <option value="Biopic">Biopic</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Patriotic">Patriotic</option>
+                </select>
+            </div>
+        </div>
+        <br><br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
